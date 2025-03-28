@@ -6938,7 +6938,7 @@ namespace MediaBrowser.Controller.MediaEncoding
 
             if (state.MediaSource.RequiresLooping)
             {
-                inputModifier += " -stream_loop -1 -reconnect_at_eof 1 -reconnect_streamed 1 -reconnect_delay_max 2";
+                inputModifier += " -stream_loop -1 -re -reconnect_streamed 1 -reconnect_delay_max 2";
             }
 
             return inputModifier;
